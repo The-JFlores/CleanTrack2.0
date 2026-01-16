@@ -18,7 +18,7 @@ struct CleanTrack2_0App: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
