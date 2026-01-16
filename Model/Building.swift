@@ -6,8 +6,7 @@
 //
 
 import Foundation
-
-struct Building: Identifiable {
+struct Building: Identifiable, Hashable {
     let id: String
     let name: String
     let alarmCode: String

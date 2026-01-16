@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddBuildingView: View {
+struct AddBuildingView2: View {
     @Environment(\.presentationMode) var presentationMode
 
     @State private var name = ""
@@ -49,5 +49,5 @@ struct AddBuildingView: View {
 }
 
 #Preview {
-    AddBuildingView(onSave: { _ in }, saver: MockBuildingSaver())
+    AddBuildingView2(onSave: { _ in }, saver: MockBuildingSaver())
 }

@@ -59,11 +59,11 @@ struct LoginView: View {
 
                 Spacer()
 
-            //    NavigationLink(destination: RegisterView(), isActive: $isShowingRegister) {
-          //          Button("Create Account") {
-           //             isShowingRegister = true
-          //          }
-          //      }
+                NavigationLink(destination: RegisterView(), isActive: $isShowingRegister) {
+                Button("Create Account") {
+                        isShowingRegister = true
+                    }
+                }
             }
             .padding()
         }
@@ -86,11 +86,6 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-    }
-}
 #Preview {
     LoginView()
 }
