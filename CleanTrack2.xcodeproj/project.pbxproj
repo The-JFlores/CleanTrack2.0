@@ -11,7 +11,6 @@
 		89386ED92F1155E500150F64 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386ED82F1155E500150F64 /* RegisterView.swift */; };
 		89386EDD2F1167A300150F64 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89386EDC2F1167A300150F64 /* HomeView.swift */; };
 		89386EE12F11763400150F64 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 89386EE02F11763400150F64 /* FirebaseFirestore */; };
-		893EDD1F2F11824900B2E956 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893EDD1E2F11824900B2E956 /* Building.swift */; };
 		897C93BC2F114D2500F0C51B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 897C93BB2F114D2500F0C51B /* FirebaseAuth */; };
 		897C93BE2F114D2500F0C51B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 897C93BD2F114D2500F0C51B /* FirebaseDatabase */; };
 		898B7C292F1A769100F8460D /* AddBuildingView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B7C282F1A769100F8460D /* AddBuildingView 2.swift */; };
@@ -24,8 +23,7 @@
 		89386ED62F11534E00150F64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		89386ED82F1155E500150F64 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		89386EDC2F1167A300150F64 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		893EDD1E2F11824900B2E956 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
-		897C939F2F11436D00F0C51B /* CleanTrack2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanTrack2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		897C939F2F11436D00F0C51B /* CleanTrack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanTrack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898B7C282F1A769100F8460D /* AddBuildingView 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddBuildingView 2.swift"; sourceTree = "<group>"; };
 		898B7C2A2F1A769200F8460D /* BuildingSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingSaving.swift; sourceTree = "<group>"; };
 		898B7C2C2F1A769400F8460D /* FirebaseBuildingSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBuildingSaver.swift; sourceTree = "<group>"; };
@@ -68,18 +66,9 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		893EDD1D2F1181F100B2E956 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				893EDD1E2F11824900B2E956 /* Building.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		897C93962F11436D00F0C51B = {
 			isa = PBXGroup;
 			children = (
-				893EDD1D2F1181F100B2E956 /* Model */,
 				897C93A12F11436D00F0C51B /* CleanTrack2.0 */,
 				89386ED32F11524200150F64 /* Views */,
 				897C93A02F11436D00F0C51B /* Products */,
@@ -89,7 +78,7 @@
 		897C93A02F11436D00F0C51B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				897C939F2F11436D00F0C51B /* CleanTrack2.0.app */,
+				897C939F2F11436D00F0C51B /* CleanTrack2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +86,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		897C939E2F11436D00F0C51B /* CleanTrack2.0 */ = {
+		897C939E2F11436D00F0C51B /* CleanTrack2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897C93AA2F11436F00F0C51B /* Build configuration list for PBXNativeTarget "CleanTrack2.0" */;
+			buildConfigurationList = 897C93AA2F11436F00F0C51B /* Build configuration list for PBXNativeTarget "CleanTrack2" */;
 			buildPhases = (
 				897C939B2F11436D00F0C51B /* Sources */,
 				897C939C2F11436D00F0C51B /* Frameworks */,
@@ -112,14 +101,14 @@
 			fileSystemSynchronizedGroups = (
 				897C93A12F11436D00F0C51B /* CleanTrack2.0 */,
 			);
-			name = CleanTrack2.0;
+			name = CleanTrack2;
 			packageProductDependencies = (
 				897C93BB2F114D2500F0C51B /* FirebaseAuth */,
 				897C93BD2F114D2500F0C51B /* FirebaseDatabase */,
 				89386EE02F11763400150F64 /* FirebaseFirestore */,
 			);
 			productName = CleanTrack2.0;
-			productReference = 897C939F2F11436D00F0C51B /* CleanTrack2.0.app */;
+			productReference = 897C939F2F11436D00F0C51B /* CleanTrack2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 897C939A2F11436D00F0C51B /* Build configuration list for PBXProject "CleanTrack2.0" */;
+			buildConfigurationList = 897C939A2F11436D00F0C51B /* Build configuration list for PBXProject "CleanTrack2" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -154,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				897C939E2F11436D00F0C51B /* CleanTrack2.0 */,
+				897C939E2F11436D00F0C51B /* CleanTrack2 */,
 			);
 		};
 /* End PBXProject section */
@@ -181,7 +170,6 @@
 				89386ED72F11534E00150F64 /* LoginView.swift in Sources */,
 				898B7C292F1A769100F8460D /* AddBuildingView 2.swift in Sources */,
 				898B7C2D2F1A769400F8460D /* FirebaseBuildingSaver.swift in Sources */,
-				893EDD1F2F11824900B2E956 /* Building.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		897C939A2F11436D00F0C51B /* Build configuration list for PBXProject "CleanTrack2.0" */ = {
+		897C939A2F11436D00F0C51B /* Build configuration list for PBXProject "CleanTrack2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				897C93A82F11436F00F0C51B /* Debug */,
@@ -377,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897C93AA2F11436F00F0C51B /* Build configuration list for PBXNativeTarget "CleanTrack2.0" */ = {
+		897C93AA2F11436F00F0C51B /* Build configuration list for PBXNativeTarget "CleanTrack2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				897C93AB2F11436F00F0C51B /* Debug */,
