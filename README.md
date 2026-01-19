@@ -1,6 +1,6 @@
 # CleanTrack 2.0
 
-CleanTrack 2.0 is a cleaning management app built with SwiftUI and Firebase.  
+CleanTrack 2 is a cleaning management app built with SwiftUI and Firebase.  
 Its main purpose is to track cleaning schedules for 10 buildings, storing key information such as:
 
 - Alarm code  

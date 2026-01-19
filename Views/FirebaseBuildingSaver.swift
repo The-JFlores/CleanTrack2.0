@@ -1,6 +1,6 @@
 //
 //  FirebaseBuildingSaver.swift
-//  CleanTrack2.0
+//  CleanTrack2
 //
 //  Concrete implementation of BuildingSaving that writes to Firebase Realtime Database.
 //

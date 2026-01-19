@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  CleanTrack2.0
+//  CleanTrack2
 //
 //  Created by Jose Flores on 2026-01-09.
 //
@@ -17,7 +17,12 @@ struct HomeView: View {
 
     @State private var showAddBuilding = false
 
-    let saver = MockBuildingSaver()  // aquí el mock
+    // Just change the value of useRealSaver to false to use the mock saver, and to true to use the real Firebase saver.
+    let useRealSaver = false
+
+    var saver: BuildingSaving {
+        useRealSaver ? FirebaseBuildingSaver() : MockBuildingSaver()
+    }
 
     var body: some View {
         NavigationView {
@@ -43,12 +48,11 @@ struct HomeView: View {
             .sheet(isPresented: $showAddBuilding) {
                 AddBuildingView2(onSave: { newBuilding in
                     buildings.append(newBuilding)
-                }, saver: saver)  // aquí pasas el mock
+                }, saver: saver)
             }
         }
     }
 }
-
 #Preview {
     HomeView()
 }
